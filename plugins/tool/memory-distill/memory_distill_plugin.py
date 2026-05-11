@@ -39,7 +39,7 @@ class MemoryDistillToolPlugin:
         """Register the consolidate_memory and distill_memory tools."""
         try:
             plugin_dir = os.path.dirname(os.path.abspath(__file__))
-            tool_path = os.path.join(plugin_dir, "tool.py")
+            tool_path = os.path.join(plugin_dir, "memory_distill_tool.py")
 
             spec = importlib.util.spec_from_file_location(
                 "memory_distill_tool",
